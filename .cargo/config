@@ -1,0 +1,14 @@
+# [target.'cfg(all(target_arch = "arm", target_os = "none"))']
+#runner = "arm-none-eabi-gdb -q -x openocd.gdb"
+# runner = "arm-none-eabi-gdb"
+
+[build]
+target = "thumbv7em-none-eabihf"
+rustflags = ["-C", "link-arg=-Tlink.x"]
+
+[env]
+DEP_LV_CONFIG_PATH="/app"
+C_INCLUDE_PATH = "/usr/include/newlib"
+
+[net]
+git-fetch-with-cli = true 

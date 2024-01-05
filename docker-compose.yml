@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  rust:
+    image: rust:buster
+    volumes:
+      - .:/app
+    working_dir: /app
+    build: .
+    command: tail -f /dev/null

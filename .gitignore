@@ -1,0 +1,10 @@
+mdi/target/**
+target/**
+.DS_Store
+lv_binding_rust/*/**
+.cargo/git/*/**
+.cargo/registry/*/**
+.cargo/.package-cache
+.cargo/.package-cache-mutate
+.cargo/git/CACHEDIR.TAG
+.cargo/registry/CACHEDIR.TAG
